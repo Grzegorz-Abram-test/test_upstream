@@ -48,8 +48,8 @@ public class Calculator extends Activity implements PanelSwitcher.Listener, Logi
     private View mBackspaceButton;
     private View mOverflowMenuButton;
 
-    static final int BASIC_PANEL    = 0;
-    static final int ADVANCED_PANEL = 1;
+    static final int BASIC_PANEL    = 10;
+    static final int ADVANCED_PANEL = 11;
 
     private static final String LOG_TAG = "Calculator2";
     private static final boolean DEBUG  = true;
