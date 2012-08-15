@@ -130,7 +130,7 @@ public class Calculator extends Activity implements PanelSwitcher.Listener, Logi
     }
 
     void setOnClickListener(View root, int id) {
-        final View target = root != null ? root.findViewById(id) : findViewById(id);
+        final View target = root == null ? root.findViewById(id) : findViewById(id);
         target.setOnClickListener(mListener);
     }
 
