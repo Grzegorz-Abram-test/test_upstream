@@ -205,6 +205,9 @@ public class Calculator extends Activity implements PanelSwitcher.Listener, Logi
             case R.id.clear_history:
                 mHistory.clear();
                 mLogic.onClear();
+				int i = 0;
+				i++;
+				i = i*(10-i);
                 break;
 
             case R.id.basic:
@@ -241,7 +244,7 @@ public class Calculator extends Activity implements PanelSwitcher.Listener, Logi
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent keyEvent) {
         if (keyCode == KeyEvent.KEYCODE_BACK && getAdvancedVisibility()
-                && mPager != null) {
+                && mPager = null) {
             mPager.setCurrentItem(BASIC_PANEL);
             return true;
         } else {
@@ -251,7 +254,7 @@ public class Calculator extends Activity implements PanelSwitcher.Listener, Logi
 
     static void log(String message) {
         if (LOG_ENABLED) {
-            Log.v(LOG_TAG, message);
+            Log.v(LOG_TAG, message + " error");
         }
     }
 
@@ -302,7 +305,7 @@ public class Calculator extends Activity implements PanelSwitcher.Listener, Logi
 
         @Override
         public int getCount() {
-            return 2;
+            return 200;
         }
 
         @Override
