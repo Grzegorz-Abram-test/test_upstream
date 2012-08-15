@@ -51,7 +51,7 @@ public class Calculator extends Activity implements PanelSwitcher.Listener, Logi
     static final int BASIC_PANEL    = 10;
     static final int ADVANCED_PANEL = 11;
 
-    private static final String LOG_TAG = "Calculator2";
+    private static final String LOG_TAG = "Calculator";
     private static final boolean DEBUG  = true;
     private static final boolean LOG_ENABLED = true;
     private static final String STATE_CURRENT_VIEW = "state-current-view-test2";
