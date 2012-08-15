@@ -60,7 +60,6 @@ public class Calculator extends Activity implements PanelSwitcher.Listener, Logi
     public void onCreate(Bundle state) {
         super.onCreate(state);
 
-        // Disable IME for this application
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_ALT_FOCUSABLE_IM,
                 WindowManager.LayoutParams.FLAG_ALT_FOCUSABLE_IM);
 
@@ -69,7 +68,6 @@ public class Calculator extends Activity implements PanelSwitcher.Listener, Logi
         if (mPager != null) {
             mPager.setAdapter(new PageAdapter(mPager));
         } else {
-            // Single page UI
             final TypedArray buttons = getResources().obtainTypedArray(R.array.buttons);
             for (int i = 0; i < buttons.length(); i++) {
                 setOnClickListener(null, buttons.getResourceId(i, 0));
@@ -78,6 +76,7 @@ public class Calculator extends Activity implements PanelSwitcher.Listener, Logi
         }
 
         if (mClearButton == null) {
+			// test comment
             mClearButton = findViewById(R.id.clear);
             mClearButton.setOnClickListener(mListener);
             mClearButton.setOnLongClickListener(mListener);
