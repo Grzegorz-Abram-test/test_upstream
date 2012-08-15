@@ -51,10 +51,10 @@ public class Calculator extends Activity implements PanelSwitcher.Listener, Logi
     static final int BASIC_PANEL    = 0;
     static final int ADVANCED_PANEL = 1;
 
-    private static final String LOG_TAG = "Calculator";
-    private static final boolean DEBUG  = false;
-    private static final boolean LOG_ENABLED = false;
-    private static final String STATE_CURRENT_VIEW = "state-current-view";
+    private static final String LOG_TAG = "Calculator2";
+    private static final boolean DEBUG  = true;
+    private static final boolean LOG_ENABLED = true;
+    private static final String STATE_CURRENT_VIEW = "state-current-view-test";
 
     @Override
     public void onCreate(Bundle state) {
